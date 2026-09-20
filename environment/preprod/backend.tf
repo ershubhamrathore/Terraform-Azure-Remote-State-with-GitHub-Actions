@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "CHANGE_ME_TF_STATE_RESOURCE_GROUP"
-    storage_account_name = "CHANGE_ME_TF_STATE_STORAGE_ACCOUNT"
-    container_name       = "CHANGE_ME_TF_STATE_CONTAINER"
+    resource_group_name  = "sample_rg"
+    storage_account_name = "sample_storage-account"
+    container_name       = "sample-blob"
     key                  = "preprod.terraform.tfstate"
   }
 }
