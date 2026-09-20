@@ -1,0 +1,16 @@
+location                    = "eastus"
+environment                 = "preprod"
+resource_group_name         = "rg-demo-preprod"
+virtual_network_name        = "vnet-demo-preprod"
+virtual_network_address_space = ["10.10.0.0/16"]
+subnet_name                 = "snet-demo-preprod"
+subnet_address_prefixes     = ["10.10.1.0/24"]
+storage_account_name        = "CHANGE_ME_STORAGE_ACCOUNT_NAME"
+subscription_id             = "CHANGE_ME_SUBSCRIPTION_ID"
+tenant_id                   = "CHANGE_ME_TENANT_ID"
+
+tags = {
+  project     = "terraform-azure-remote-state"
+  owner       = "CHANGE_ME_OWNER"
+  cost-center = "CHANGE_ME_COST_CENTER"
+}
